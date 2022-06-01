@@ -1,0 +1,64 @@
+.view-task .tasks-list .single-task{
+  display: flex;
+  background-color: #041955;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px 0;
+  transition: background-color .5s ease, opacity .7s ease;
+}
+.tasks-list .single-task .done-btn{
+  flex-basis: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+  border-right: 3px solid #3450A1;
+  color: #237AFD;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 7px;
+  transition: color .5s ease, border-right .5s ease;
+}
+.tasks-list .single-task .task-name{
+  flex-basis: 85%;
+  padding: 17px 10px;
+  border-right: 3px solid #3450A1;
+  letter-spacing: 1px;
+  transition: border-right .5s ease;
+}
+.tasks-list .single-task .edit-btn{
+  flex-basis: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.3rem;
+  color: #237AFD;
+  cursor: pointer;
+  padding: 7px;
+  border-right: 3px solid #3450A1;
+  transition: color .5s ease;
+}
+.tasks-list .single-task .trash-btn{
+  flex-basis: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+  color: #ff063c;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 7px;
+  transition: color .5s ease;
+}
+
+.single-task i{
+  pointer-events: none;
+  margin-top: .3rem;
+}
