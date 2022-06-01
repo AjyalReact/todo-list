@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, PageHeader } from './Components';
+import { Form, PageHeader, Result } from './Components';
 class App extends Component {
   render() {
     return (
@@ -7,6 +7,7 @@ class App extends Component {
         <main className='main-page'>
           <PageHeader />
           <Form />
+          <Result />
         </main>
       </div>
     )
