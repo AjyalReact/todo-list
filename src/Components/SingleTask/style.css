@@ -62,3 +62,11 @@
   pointer-events: none;
   margin-top: .3rem;
 }
+
+/* When Task is Done */
+.single-task.done{
+  opacity: .4;
+}
+.single-task.done .task-name{
+  text-decoration: line-through;
+}
