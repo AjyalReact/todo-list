@@ -3,9 +3,9 @@
 const checkTasks = (task, tasks) => {
   const taskExist = tasks.find(t => t.name === task.name);
   if (taskExist) {
-    return true;
+    return false;
   }
-  return false;
+  return true;
 }
 
 export default checkTasks;
