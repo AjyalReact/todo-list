@@ -16,3 +16,8 @@
   align-content: center;
   color: #FFF;
 }
+
+.main-page{
+  width: 100%;
+  max-width: 550px;
+}
