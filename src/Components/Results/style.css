@@ -7,3 +7,6 @@
   color: #FFF;
   transition: color .5s ease;
 }
+.view-task .tasks-list{
+  list-style-type: none;
+}

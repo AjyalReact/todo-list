@@ -1,0 +1,7 @@
+.view-task .no-task-msg{
+  border-radius: 15px;
+  background-color: #041955;
+  padding: 18px 12px;
+  margin: 25px 0;
+  transition: background-color .5s ease;
+}
