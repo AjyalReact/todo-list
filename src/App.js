@@ -1,11 +1,13 @@
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <h1>TO DO List</h1>
-    </div>
-  );
+import React, { Component } from 'react'
+class App extends Component {
+  render() {
+    return (
+      <div className='container'>
+        {/* Components here */}
+      </div>
+    )
+  }
 }
+
 
 export default App;
