@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap');
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.container{
+.container {
   min-height: 100vh;
-  background-color: #3D47AF;
+  background-color: #3d47af;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #FFF;
 }
