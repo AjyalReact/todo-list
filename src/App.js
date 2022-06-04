@@ -8,13 +8,13 @@ const tasks = localStorage.getItem("tasks")
   ? JSON.parse(localStorage.getItem("tasks"))
   : [];
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       tasks: tasks,
       inputValue: "",
       errorMsg: "",
-      editMood: '',
+      editMood: "",
     };
   }
   setTasks = (tasks) => {
@@ -23,28 +23,28 @@ class App extends Component {
   };
 
   setInputValue = (inputValue) => {
+    this.setState({ errorMsg: "" });
     this.setState({ inputValue });
   };
 
   setEditMood = (e, id) => {
     e.preventDefault();
     const { tasks } = this.state;
-    const thisTask = tasks.find(item => item.id === id);
+    const thisTask = tasks.find((item) => item.id === id);
     this.setState({ editMood: id });
     this.setInputValue(thisTask.name);
-  }
+  };
 
   handleSubmit = (e) => {
     e.preventDefault();
     const { tasks, inputValue, editMood } = this.state;
     if (editMood) {
-      const thisTask = tasks.find(item => item.id === editMood);
+      const thisTask = tasks.find((item) => item.id === editMood);
       thisTask.name = inputValue;
       this.setTasks(tasks);
       this.setState({ editMood: false });
       this.setInputValue("");
-    }
-    else {
+    } else {
       const { inputValue, tasks } = this.state;
       if (inputValue) {
         const task = {
@@ -89,7 +89,11 @@ class App extends Component {
             inputValue={inputValue}
             setInputValue={this.setInputValue}
           />
-          {errorMsg ? <p className="error">{errorMsg}</p> : false}
+         {
+           errorMsg?  <div className="errorMessgae">
+           <p>{errorMsg ? <p className="error">{errorMsg}</p> : false}</p>
+         </div> : false
+         }
           <Result
             tasks={tasks}
             handleDone={this.handleDone}
